@@ -517,6 +517,10 @@ function ($compile, $parse, $document, $position, dateFilter, dateParser, datepi
             ngModel.$setValidity('date', true);
             return date;
           }
+        } else if (angular.isNumber(viewValue)) {
+          // Expect numeric model values to be millis for datepicker controls.
+          ngModel.$setValidity('date', true);
+          return new Date(viewValue);
         } else {
           ngModel.$setValidity('date', false);
           return undefined;
