@@ -3,7 +3,7 @@
         "name": "tvv"
     },
     "name": "angular-bootstrap-tvv",
-    "version": "0.11.2.1",
+    "version": "0.11.2-tvv",
     "main": ["./dist/ui-bootstrap-tpls-0.12.0-SNAPSHOT.js"],
     "dependencies": {
         "angular": ">=1"
